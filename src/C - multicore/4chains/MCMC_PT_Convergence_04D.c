@@ -202,7 +202,7 @@ double expectancy (double x[], int size)
 {
     double result = 1;
     int i=0;
-    for(int i=0; i<size;i++){
+    for(i=0; i<size;i++){
         result = result*x[i];
     }
     return result;
