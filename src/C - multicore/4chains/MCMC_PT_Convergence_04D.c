@@ -133,7 +133,7 @@ while (criteria<100000) {
     p3 = pow(mypdf(y_now[2],d_size),0.25);
     p4 = pow(mypdf(y_now[3],d_size),0.0625);
     p3_2 = pow(mypdf(y_now[3],d_size),0.25);
-    p4_2 = pow(mypdf(y_now[2],d_size),0.625);
+    p4_2 = pow(mypdf(y_now[2],d_size),0.0625);
     
     TOSS_A_DICE = (rand() % 10000) / 10000.0;
     if(TOSS_A_DICE < (p4_2*p3_2)/(p3*p4) ){
