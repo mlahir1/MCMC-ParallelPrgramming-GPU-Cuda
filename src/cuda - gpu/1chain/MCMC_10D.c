@@ -98,7 +98,9 @@ int main()
   printf("accepted: %d\n rejected: %d\n",accepted, rejected);
   t2 = clock();
   printf("Exec time: %lf\n",(t2-t1)/double(CLOCKS_PER_SEC));
-   
+  cudaFree(y_c1_cuda);
+  cudaFree(y_now1_cuda);
+  cudaFree(temp1_cuda);
   return 0;
 }
 

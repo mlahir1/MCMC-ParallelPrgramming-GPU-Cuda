@@ -155,7 +155,16 @@ int main()
   printf("exchanged: %lf\n",exchanged);
   printf("Converged Value:%lf\n", EX_MCMC/i);
   printf("Exec time: %lf\n",(t2-t1)/double(CLOCKS_PER_SEC));
-   
+  
+  cudaFree(y_c1_cuda);
+  cudaFree(y_now1_cuda);
+  cudaFree(y_c2_cuda);
+  cudaFree(y_now2_cuda);
+  cudaFree(temp1_cuda);
+  cudaFree(temp2_cuda);
+  cudaFree(temp3_cuda);
+  cudaFree(temp4_cuda);
+  
   return 0;
 }
 
